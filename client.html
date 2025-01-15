@@ -21,19 +21,20 @@
 </head>
 
 <body>
-    <h1>TODOリスト</h1>
+    <h1>メモ帳</h1>
 
-    <!-- TODOを追加するためのフォーム -->
-    <form id="todoForm" class="todo-form">
-        <input type="text" id="todoInput" placeholder="新しいTODOを入力..." required>
-        <button type="submit">追加</button>
-    </form>
+    <!-- memoを追加するためのフォーム -->
+     <form id="memoForm">
+        <input type="text" id="memoTitle" placeholder="タイトル" required>
+        <textarea id="memoContent" placeholder=""内容 required></textarea>
+        <button type ="submit">メモを追加</button>
 
-    <!-- TODOリストを表示する場所 -->
-    <ul id="todoList"></ul>
+    <!-- memoリストを表示する場所 -->
+    <h2>メモ一覧</h2>
+    <ul id="memoList"></ul>
 
     <script>
-        // APIサーバーのベースURL
+        // APIサーバーのベースURL　後でやる
         const API_URL = '/todos';
 
         /**
