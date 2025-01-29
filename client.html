@@ -17,6 +17,105 @@
             text-decoration: line-through;
             color: gray;
         }
+
+        /* ページ全体に対するスタイルを追加 */
+        body {
+            font-family: Arial, sans-serif; /* フォントを指定 */
+            background-color: #f4f4f4; /* 背景色を変更 */
+            color: #333; /* 文字色を設定 */
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #2c3e50;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        /* 音楽アップロードフォームのスタイル */
+        form {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        #musicFile {
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        /* 音楽リストのスタイル */
+        #musicList {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #musicList {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center; /* リストアイテムを中央に寄せる */
+            width: 100%;
+            display: flex;
+            justify-content: center; /* リスト全体を中央に配置 */
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #musicList li {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+            width: 60%; /* リストアイテムの幅を設定して、中央に寄せる */
+        }
+
+        /* 再生ボタンのスタイル */
+        button {
+            margin-left: 10px;
+            padding: 5px 10px;
+            background-color: #2ecc71;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #27ae60;
+        }
+        
+        #audioPlayer {
+            display: none; /* 初期状態では非表示 */
+            margin: 20px auto;
+            width: 60%; /* 幅を調整 */
+        }
+
+        /* 音楽リストが増えた場合でもプレイヤーが下に配置される */
+        .player-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+
     </style>
 </head>
 
